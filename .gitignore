@@ -1,0 +1,22 @@
+# Секреты
+.env
+*.env
+!.env.example
+google_token.json
+*token*.json
+*credentials*.json
+service-account*.json
+
+# Рабочее состояние и логи
+data/
+*.log
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# OS
+.DS_Store

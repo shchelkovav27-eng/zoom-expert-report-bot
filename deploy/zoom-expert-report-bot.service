@@ -1,0 +1,16 @@
+[Unit]
+Description=Zoom expert report Telegram bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=botuser
+WorkingDirectory=/opt/zoom-expert-report-bot
+EnvironmentFile=/opt/zoom-expert-report-bot/.env
+ExecStart=/opt/zoom-expert-report-bot/venv/bin/python bot.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
